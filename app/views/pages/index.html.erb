@@ -1,0 +1,19 @@
+<br>
+<h1>Harry Potter</h1>    
+<div class="row">
+<% @pages.each do |a| %>
+<div class="col-sm-4">
+<div class="card mb-3 text-bg-primary" style="width: 18rem;"> 
+  <div class="card-header">
+    <h5 class="card-title"><%="#{a.character}"%></h5>
+  </div>
+  <div class="card-body">
+    
+    <p class="card-text">Locacion: <%="#{a.location}"%></p>
+    <p class="card-text">Casa: <%="#{a.house}"%></p>
+    
+  </div>
+</div>
+</div>
+<% end %>
+</div>
